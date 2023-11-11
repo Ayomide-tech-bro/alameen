@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+</head>
+<body>
+
+
+<div class="row mt-5">
+
+
+    <div class="col-5 mx-auto border bg-primary p-4">
+
+
+        <h6 class="alert alert-dark mb-2 text-center">A writer Program</h6>
+
+
+        <p class="mb-2">
+            <input type="text" name="" id="A_text" class="form-control" onkeydown="A_text();">
+        </p>
+
+<hr>
+
+
+<p class="mb-2 border p-2 rounded" id="B_text">
+
+</p>
+
+
+    </div>
+</div>
+
+    
+  <!-- <p class="mt-5 text-center">
+    <button class="btn btn-primary" onclick="Result()">Start Checkimg your Result</button>
+ </p>
+     -->
+    <script>
+
+// var color1 = prompt ('Enter a color name')
+// var color2 = prompt ('Enter a color name')
+// var color3 = prompt ('Enter a color name')
+// var color4 = prompt ('Enter a color name')
+// var color5 = prompt ('Enter a color name')
+
+// var colors = [color1, color2, color3, color4, color5]
+// console.log(colors)
+
+
+// var profile= 'My name is Ajala Al-ameen '+
+
+
+//  '\ I am dark in complexion'+
+//  '\ I am sitting beside Muhammed and Fridaous'+
+//  '\ I am literally starving right now'
+
+//  alert(profile)
+
+
+
+// LOOP STRUCTURES
+
+
+// var z = large_text.replace
+// alert(z)
+
+
+// RANDOM NUMBERS 
+// var bigDecimal = math.random();
+// var improvedNun = (bigDcimal = 50) + 40;
+// var numberOfStars = Math.floor(improvedNun);
+// document.write(number of stars)
+
+
+// min = Math.ceil(400);
+
+// max = Math.floor(450);
+
+// var x = Math.floor(Math.random()  * (max-min + 1)) +min;
+// document.write(x)
+
+
+   
+// var res = prompt('what coding languaage do you study ?');
+
+    
+// var name = prompt('what is your full name?')
+//   var phone = prompt('what is your phone number?')
+//   var email = prompt('what is your email address?')
+//   var dob = prompt('what is your date of birth?')
+  
+
+//   var profile = 'Your Full profile \n\Your name is: '+name+
+//   '\n Your phone is: '+phone+
+//   '\n Your email is: '+email+
+//   '\n Your Date of Birth is: '+dob
+
+//   alert(profile)
+
+
+  // var X = 2 + 2;
+
+  //   alert(2 + 2);
+
+
+  
+        // NESTED IF
+
+        // gender :  female / male
+        // nationality :  nigerian
+        // qualification :  UTME
+        // ol :   greater or equals 3
+        // age  :  greater or equals 16years
+
+
+
+        // var gender = prompt('what is your gender ?')
+        // if (gender=='female'||gender=='male') {
+        //       var nationality = prompt('what is your nationality ?').toLowerCase();
+        //       if (nationality=='nigerian') {
+        //           var q = prompt('what is your UTME score?').toUpperCase();
+        //           if (q>=200) {
+        //                 var age = prompt('what is your age').toLowerCase()
+        //                 if (age>='16') {
+        //                      var ol = prompt('How many olevel credits do you have ?')
+        //                      if (ol>=5) {
+        //                         alert ('Congrats! you will be contacted for an interview date and location shortly.')
+        //                      } else {
+        //                         alert('Sorry!, you do not qualify for the post, because your age is too low')                
+        //                      }
+        //                 } else {
+        //                     alert('Sorry!, you do not qualify for the screening, because you do not have enough of olevel credits')                   
+        //                 }
+        //           } else {
+        //             alert('Sorry!, you do not qualify for the screening, because UTME Score not accepted')                   
+        //           } 
+        //       } else {
+        //         alert('Sorry!, you do not qualify for the screening, because nationality not accepted')
+        //       }
+        // } else {
+        //     alert('Sorry!, you do not qualify for the screening, because gender not accepted')
+        // }
+        
+
+        // LOOP STRUCTURES
+
+
+// var x = prompt('Type a number')
+// var y = x%2
+
+    
+//     if  (y==0) {
+//             alert('EVEN Number')
+//         } else {
+//             alert('ODD Number')
+//         } 
+
+// var date = new Date();
+
+// var milli_sec = date.getTime();
+// document.write(milli_sec+ ' msec<br>')
+
+// var seconds = milli_sec/1000;
+// document.write(seconds+ ' secs<br>')
+
+// var minutes = seconds/60;
+// document.write(minutes.toFixed(2)+' mins<br>') 
+
+// var hours = minutes/60
+// document.write(hours.toFixed(2)+' hours<br>')
+
+   
+
+//     var days = hours/24;
+//     document.write(days.toFixed(2)+' days<br>')
+
+
+//DOB: July 10, 1994
+// var today = new Date();
+// var today_mil = today.getTime();
+// var today_sec = today_mil/1000;
+
+
+// var dob = new Date('October 31,  2000');
+// var dob_mil = dob.getTime();
+// var dob_sec = dob_mil/1000;
+
+
+// var diff_sec = today_sec - dob_sec;
+// var days = diff_sec/(60*60*24);
+// alert(days.toFixed()+' days');
+
+
+  
+
+//var mill_sec = date.getTime();
+  //  document.write(seconds+ ' secs <br>')
+
+//   function dob_calculator(params) {
+
+// var today = new Date();
+// var today_mil = today.getTime();
+// var today_sec = today_mil/1000;
+
+// var dob_str = prompt('Enter a valid date');
+// var dob = new Date(dob_str);
+
+// var dob_mil = dob.getTime();
+// var dob_sec = dob_mil/1000;
+
+// var diff_sec = today_sec - dob_sec;
+// var year = diff_sec/(60*60*24*365);
+// var year = year.toFixed();
+// alert(year+'years old' )
+
+
+
+//   }
+
+
+//   function Result(params) {
+// var score = prompt('Enter your score')
+// if(score<=0) {
+//     alert('Error, Invalid score entered.')
+// } else if (score>=75&&score<=100) {
+//     alert('A1')
+// } else if (score>=70&&score<=74)  {
+//     alert('B2')
+// } else if (score>=65&&score<=79)  {
+//     alert('B3')
+// } else if (score>=60&&score<64)   {
+//     alert ('C4')
+// } else if (score>=55&&score<59)   {
+//     alert ('C5')
+// }  else if (score>=50&&score<54)   {
+//     alert ('C6')
+// }  else if (score>=45&&score<49)   {
+//     alert ('D7')
+// }  else if (score>=40&&score<44)   {
+//     alert ('E8')
+// }  else if (score>=0&&score<39)   {
+//     alert ('F9')
+// }  else {
+//     alert ('Please, enter a valid score ...')
+// }
+//   }
+
+   function A_text(params) {
+     var text = document.getElementById('A_text').value;
+
+
+     document.getElementById('B_text').innerText = text
+   }
+
+ </script>
+
+
+
+
+</body>
+</html>

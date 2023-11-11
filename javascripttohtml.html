@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dist/js/bootstrap.bundle.js">
+    <title>javascript manipulation of html</title>
+</head>
+<body>
+
+    <br>
+
+    <div class="row mt-5">
+          <div class="col-6 mx-auto">
+               <img src="pics/Rolls Royce.jpg" id="img1" alt="" height="400" class="w-100 rounded">
+               <button class="btn btn-warning w-100 mt-2" onclick="switch_pic()">Swap Image</button>
+          </div>
+    </div>
+    
+
+
+    <script>
+        // function switch_pic () {  
+        //     document.getElementById('img1').src = 'pics/Mazda.jpg'
+        // }
+
+
+
+  //1ST VERSION
+         let x = 1;
+        function switch_pic () {   
+    
+            document.getElementById('img1').src = 'pics/' + x + '.jpg'
+            x++
+
+            // resetting
+            if (x==5) { x=1 }
+    
+        }
+
+
+         // 2ND VERSION     
+        //  function switch_pic() {
+        //     var min = 1;      var max = 4;
+        //     var x = Math.floor(Math.random() * (max - min + 1)) + min;
+        //     document.getElementById('img1').src = 'pics/' + x + '.jpg'
+        // }
+
+
+        // 3RD VERSION 
+        // function switch_pic() {
+        //     images = [
+        //     'Mazda.jpg',
+        //     'B.M.W.jpg',
+        //     'Acura-TLX-SH-AWD-Type-S-47-2022.jpg',
+        //     'jeep.jpg',
+        //     'vlad-kutepov-gvMsGzkx8eM-unsplash.jpg',
+        //     '2020-audi-q3-121-1564424596.jpg',
+        //     'Audi-S3-86-2022.jpg',
+        //     'chris-barbalis-9qlSGW_LgKs-unsplash.jpg',
+        //     '2019-chevrolet-camaro-2-0t-1le-6mt-109-1539790971.jpg'
+        //    ]
+
+        //     var min = 0;      var max = 8; 
+        //     var x = Math.floor(Math.random() * (max - min + 1)) + min;
+
+        //     document.getElementById('img1').src = 'pics/' + images[x]
+        // }
+
+    
+
+// 4TH VSERSION
+        // var x = 0;
+        // function switch_pic() {
+        //     images = [
+        //     'Mazda.jpg',
+        //     'B.M.W.jpg',
+        //     'Acura-TLX-SH-AWD-Type-S-47-2022.jpg',
+        //     'jeep.jpg',
+        //     'vlad-kutepov-gvMsGzkx8eM-unsplash.jpg',
+        //     '2020-audi-q3-121-1564424596.jpg',
+        //     'Audi-S3-86-2022.jpg',
+        //     'chris-barbalis-9qlSGW_LgKs-unsplash.jpg',
+        //     '2019-chevrolet-camaro-2-0t-1le-6mt-109-1539790971.jpg'
+        //            ]
+
+        //     document.getElementById('img1').src = 'pics/' + images[x]
+        //     x++
+
+           // resetting
+        //     if (x==9) { x=1 }
+        // }
+        
+
+       
+    </script>
+
+    
+</body>
+</html>

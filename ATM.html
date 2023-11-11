@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="dist/js/bootstrap.bundle.js">
+</head>
+<body>
+<div class="mt-5 row">
+    <div class="col-6 mx-auto">
+        <div class="row">
+
+<div class="col-6 p-2">
+<div class="bg-light rounded p-3 border">
+<p class="text-center p-1 bg-dark text-white mb-2">Deposit</p>
+<div class="form-group">
+    <label for="" class="form-label">Enter Amount</label>
+    <input type="number" id="txt_dep" class="form-control">
+</div>
+<button onclick="deposit()" class="btn btn-primary btn-sm w-100 mt-2">Deposit</button>
+   </div>
+</div>
+
+<div  class="col-6 p-2">
+    <div class="bg-light rounded p-3 border">
+<p class="text-center p-1 bg-dark text-white mb-2">Withdraw</p>
+<div class="form-group">
+    <label for="" class="form-label">Enter Amount</label>
+    <input type="number" id="txt_wdraw" class="form-control">
+</div>
+ <button onclick="withdraw()" class="btn btn-primary btn-sm w-100 mt-2">Withdraw</button>
+    </div>
+</div>
+
+<div class="col-12 p-2">
+<div class="bg-light text-white rounded p-3 border">
+    <p class="text-center p-1 bg-dark text-white mb-2">Check Balance</p>
+    <div class="form-group">
+        <input type="number" id="txt_bal" class="form-control">
+    </div>
+    <button onclick="check_balance()" class="btn btn-primary btn-sm w-100 mt-2">Check Balance</button>
+ </div>
+</div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<script>
+    var balance = 0;
+
+
+    function check_balance() {
+        document.getElementById('txt_bal').value = balance;
+    }
+
+    function deposit(){
+        var amt = parseInt(document.getElementById('txt_dep').value);
+       if (amt<=0) {
+        alert('Invalid deposit amount');
+       }else {
+        balance = balance + amt;
+        alert('Deposit Successful')
+       }
+    }
+       
+    function withdraw(){
+        var amt = parseInt(document.getElementById('txt_wdraw').value);
+        if (amt<=0) {
+            alert('Invalid Withdraw amount');
+        } else {
+            if (amt<=balance) {
+                balance = balance-amt;
+                alert('Withdraw Successful')
+            }else{
+                alert('Your balance is too low for this transaction')
+            }
+        }
+    }
+       
+    
+</script>

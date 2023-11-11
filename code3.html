@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+
+    
+
+
+     <script>
+
+
+        // NESTED IF
+
+        // gender :  female
+        // nationality :  nigerian
+        // qualification :  BSC / HND
+        // area of specialization  :  javascript
+        // year of experiance   :   greater or equals 3years
+
+
+        var gender = prompt('what is your gender ?')
+        if (gender=='female') {
+              var nationality = prompt('what is your nationality ?').toLowerCase();
+              if (nationality=='nigerian') {
+                  var q = prompt('what is your qualification ?').toUpperCase();
+                  if (q=='BSC'||q=='HND') {
+                        var aos = prompt('enter your languange specialized in').toLowerCase()
+                        if (aos=='javascript') {
+                             var ex = prompt('How many years of experience do you have ?')
+                             if (ex>=3) {
+                                alert ('Congrats! you will be contacted for an interview date and location shortly.')
+                             } else {
+                                alert('Sorry!, you do not qualify for the post, bcos years of experience is too low')                
+                             }
+                        } else {
+                            alert('Sorry!, you do not qualify for the post, bcos area of specialization not accepted')                   
+                        }
+                  } else {
+                    alert('Sorry!, you do not qualify for the post, bcos qualification not accepted')                   
+                  } 
+              } else {
+                alert('Sorry!, you do not qualify for the post, bcos nationality not accepted')
+              }
+        } else {
+            alert('Sorry!, you do not qualify for the post, bcos gender not accepted')
+        }
+        
+
+        // LOOP STRUCTURES
+
+
+     </script>
+
+
+</body>
+</html>

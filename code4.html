@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <script src="dist/js/bootstrap.bundle.js"></script> 
+    <title>Calculator</title>
+</head>
+<body>
+
+
+
+    <div class="row">
+          <div class="col-4 mx-auto">
+                <p class="alert alert-dark mb-2 mt-5 text-center">Simple Calculator</p> <hr>
+                 <div class="form-group mb-2">
+                      <label for="" class="form-label">1st number</label>
+                      <input type="number" class="form-control" id="fn">
+                 </div>
+
+                 <div class="form-group mb-2">
+                    <label for="" class="form-label">2nd number</label>
+                    <input type="number" class="form-control" id="sn">
+               </div>
+
+               <div class="form-group mb-2">
+                <label for="" class="form-label">Operator</label>
+                <select name="" id="op" class="form-select">
+                    <option value=""></option>
+                    <option value="add">Add</option>
+                    <option value="sub">Subtract</option>
+                    <option value="mul">Multiply</option>
+                    <option value="div">Divide</option>
+                </select>
+           </div>
+
+               <div class="form-group mb-2">
+                <label for="" class="form-label">Result</label>
+                <input type="text" class="form-control" id="rs" readonly>
+              </div>
+
+              <div class="row mt-4">
+                   <div class="col-6">
+                      <input type="reset" value="Reset" onclick="clear_all()" class="btn btn-danger w-100">
+                   </div>
+                   <div class="col-6">
+                      <input type="button" value="Calculate" onclick="calculate()" class="btn btn-warning w-100">
+                   </div>
+              </div>
+          </div>
+    </div>
+    
+
+    
+
+
+    <script>
+        function calculate() {
+              var fn = parseFloat(document.getElementById('fn').value)
+              var sn = parseFloat(document.getElementById('sn').value)
+              var op = document.getElementById('op').value
+              var rs;
+
+              if (op=='add') { rs = fn + sn;  }
+              else if (op=='sub') { rs = fn - sn;  }
+              else if (op=='div') { rs = fn / sn;  }
+              else if (op=='mul') { rs = fn * sn;  }
+              else  { rs = 'Invalid Operator'; }
+
+              document.getElementById('rs').value = rs
+
+            }
+
+
+        function clear_all(params) {
+            document.getElementById('fn').value = null;
+            document.getElementById('sn').value = null;
+            document.getElementById('op').value = null;
+            document.getElementById('rs').value = null;
+        }
+
+
+        // design a program to calculate simple interest using a bootstrap designed form
+    </script>
+</body>
+</html>

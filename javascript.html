@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <title>Document</title>
+
+
+
+
+<body>
+ 
+     <!-- <p class="mt-5 text-center">
+        <button class="btn btn-primary" onclick="dob_calculator()">Open Calculator</button>
+     </p>
+
+      -->
+              
+      
+       <!-- <p class="mt-5 text-center">
+          <button class="btn btn-primary m-2" ondblclick="dob_calculator()">Start DOB Calculator</button>
+  
+          <button class="btn btn-primary m-2" onclick="grade_system()">Start Grade System</button>
+       </p> -->
+  
+       <hr>
+  
+  
+        <div class="row mt-3">
+            <div class="col-md-4 mx-auto">
+                <div id="d1" class="bg-success" style="height: 300px;"></div>
+                <button type="button" class="btn btn-primary w-100 mt-2" onclick="change_color()">Change Color</button>
+            </div>
+        </div>
+
+     <script>
+
+          
+       var User = 'ola';
+
+        var weight = '3000';      // strings ==>  'oyeleke odunsi', '238728979273', "90.9089", 'JHSGF7634F7Y762GF82762F' 
+        var price = 3000;       // numbers ==> floats [ 0.23, 3.142789 ] , integers [ 123, 1000000, 400, 456 ]
+        var check = true;    // boolean ==> true, false
+
+        var country;           // initialization
+        country = 'Nigeria';    // assignment
+
+        var usertrackingnumber;    // bad
+
+        var user_tracking_number    // nice
+        var userTrackingNumber     // also nice but this is called camelCasing
+        
+        alert(User);
+
+
+
+
+
+
+
+
+        x=0;
+     function change_color() {
+          backgrounds = [
+         'bg-dark',
+         'bg-light',
+         'bg-danger',
+         'bg-warning',
+         'bg-primary',
+         'bg-secondary',
+         'bg-info'
+          ]
+          document.getElementById('d1').className = backgrounds[x];
+          
+       x++
+
+       
+         //resetting
+         if (x==7)  (x=1)
+     }
+     
+        
+
+         // OPERATORS & OPERANDS
+
+         // MATHEMATICAL OPERATORS  ==> +, -, /, *, %, (), ++, --
+        //  var x = 2; 
+        //  var y = 50;
+        //  var c = y % x;
+        //  alert(c);
+
+        // var rs = 10/5+(6*(2-2))
+        // alert(rs)
+
+        // var x = 2;
+        // x++;
+        // x++;
+        // x++;
+        // alert(x)  // 5
+
+        // var y = 17;
+        // y++;
+        // y--; 
+        // alert(y)  // 17
+
+         // LOGICAL OPERATORS       ==>  <, <=, >, >=, !=, <>, ==, ===
+
+         // RELATIONAL OPERATORS    ==> &&, ||,
+
+        //   var userName = 'Yinka Adediran';
+        //   alert("Thanks, " + userName + " !");
+
+
+        // alert("2" + 2);  // 2 2,  22,  4
+
+
+        // var res = prompt('What coding language do you study ?');
+
+        // var name = prompt('what is your fullname?')
+        // var phone = prompt('what is your phone number?')
+        // var email = prompt('what is your email addresss?')
+        // var dob = prompt('what is your date of birth?')
+
+        // var profile = 'Your Full Profile \n\nYour name is: '+name+
+        // '\n Your phone is: '+phone+
+        // '\n Your email is: '+email+
+        // '\n Your Date of Birth is: '+dob
+
+        // alert(profile)
+
+
+        // CONTROL STRUCTURES
+        // var x = 21;  
+        // var y = 10;
+
+
+        // SIMPLE IF
+
+        // if (y===10) {
+        //    alert('red')
+        // } else {
+        //   alert('blue')
+        // }
+
+
+        //   var x = prompt('Enter a number')
+        //   var r = x%2;
+
+        //   if (r==0) {
+        //     alert('The number is Even')
+        //   } else {
+        //     alert('The number is odd')
+        //   }
+
+
+        // COMPLEX IF
+
+        // 1-4 : take half of a teaspoon
+        // 5-12 : take one teaspoon 
+        // 13-19 : take one and half teaspoon 
+        // 20 and above take one tablespoon
+
+        // var age = prompt('Enter your age')
+        // if (age<=0) {
+        //     alert('Error, Invalid age entered.')
+        // } else if (age>=1&&age<=4) {
+        //     alert('take half of a teaspoon')
+        // } else if (age>=5&&age<=12) {
+        //     alert('take one of a teaspoon')
+        // } else if (age>=13&&age<=19) {
+        //     alert('take one and half of a teaspoon')
+        // } else if (age>=20) {
+        //     alert('take one tablespoon')
+        // } else {
+        //     alert('Please, enter a valid age ...')
+        // }
+
+
+
+        // var score = prompt('Enter your score')
+        // if (score<0) {
+
+        // } else if (score>=0&&score<=19) {
+        //    alert('F9')
+        // } else if (score>=20&&score<=29) {
+        //     alert('E8')
+        // } else if (score>=30&&score<=34) {
+        //     alert('D7')
+        // } else if (score>=35&&score<=39) {
+        //     alert('C6')
+        // } else if (score>=40&&score<=44) {
+        //     alert('C5')
+        // } else if (score>=45&&score<=49) {
+        //     alert('C4')
+        // } else if (score>=50&&score<=64) {
+        //     alert('B3')
+        // } else if (score>=65&&score<=69) {
+        //     alert('B2')
+        // } else if (score>=70&&score<=100) {
+        //     alert('A1')
+        // } else {
+        //     alert('Invalid score!')
+        // } 
+
+
+
+
+        // NESTED IF
+
+        // gender :  female
+        // nationality :  nigerian
+        // qualification :  BSC / HND
+        // area of specialization  :  javascript
+        // year of experiance   :   greater or equals 3years
+
+
+        // var gender = prompt('what is your gender ?')
+        // if (gender=='female') {
+        //       var nationality = prompt('what is your nationality ?').toLowerCase();
+        //       if (nationality=='nigerian') {
+        //           var q = prompt('what is your qualification ?').toUpperCase();
+        //           if (q=='BSC'||q=='HND') {
+        //                 var aos = prompt('enter your languange specialized in').toLowerCase()
+        //                 if (aos=='javascript') {
+        //                      var ex = prompt('How many years of experience do you have ?')
+        //                      if (ex>=3) {
+        //                         alert ('Congrats! you will be contacted for an interview date and location shortly.')
+        //                      } else {
+        //                         alert('Sorry!, you do not qualify for the post, bcos years of experience is too low')                
+        //                      }
+        //                 } else {
+        //                     alert('Sorry!, you do not qualify for the post, bcos area of specialization not accepted')                   
+        //                 }
+        //           } else {
+        //             alert('Sorry!, you do not qualify for the post, bcos qualification not accepted')                   
+        //           } 
+        //       } else {
+        //         alert('Sorry!, you do not qualify for the post, bcos nationality not accepted')
+        //       }
+        // } else {
+        //     alert('Sorry!, you do not qualify for the post, bcos gender not accepted')
+        // }
+        
+
+        // ARRAYS
+        // var sd = [1, 45.098, 'blue', 'Nigeria', true, [12,'bdhd',false], {a:'23',b:'63673'}];
+
+        // var colors = ['red', 'blue', 'yellow', 'green', 'purple', 'cyan']
+        // colors.pop();
+        // colors.push('brown', 'white', 'black', 'grey');
+
+
+
+        // var age = [20, 22, 28, 29, 27, 26, 24, 25]
+        // var countries = ['egypt', 'ethiopia', 'chad', 'seychelles', 'mauritius', 'sierra leone', 'ghana']
+        // var x = [true, false]
+
+zz
+
+
+        // write a simple program to print 2 multiplication table.
+        // from 1 to 12
+
+
+        // document.write('<div class="row m-3 bg-warning">')
+        // for (let table = 1; table <=12; table++) {
+      
+        //     document.write('<div class="col-1 p-2">')
+        //         document.write('<div class="bg-dark rounded text-warning p-2">')
+        //         for (let index = 1; index <=12; index++) {
+        //                 var rs = table * index;
+        //                 var m = table+' x '+index+' = '+rs+'<br>';
+        //                 document.write('<p class="mb-0 line">'+m+'</p>')
+        //         }
+        //         document.write('</div>')
+        //     document.write('</div>')
+            
+        // }
+        // document.write('</div>')
+
+
+
+        // LENGTY OF TEXT
+        // var x = prompt('Enter some text')
+        // var length = x.length
+        // alert('The text contains '+length+' no of characters')
+
+
+        // FINDING SEGMENTS
+        // var x = prompt('Enter some text')
+        // var search = prompt('Emter a search text')
+        
+        // // var z = x.indexOf(search)
+        // var z = x.lastIndexOf(search)
+        // if (z<0) {
+        //     alert('The serched text does not exist!')
+        // } else {
+        //     alert('The serched text exist at index '+z)
+        // }
+
+
+
+        // CHAR AT
+        // var x = prompt('Enter some text')
+        // var index = prompt('Enter an index')
+        
+        // var z = x.charAt(index) 
+        // alert(z)
+         
+
+
+        // REPLACE
+        // var large_txt = prompt('Enter large text')
+        // var x = prompt('what to replace ?')
+        // var rp = prompt('replacement')
+        
+        // var z = large_txt.replace(x, rp)
+        // alert(z)
+
+
+
+        // GLOBAL REPLACEMENT
+        // var large_txt = prompt('Enter large text')
+        // var x = prompt('what to replace ?')
+        // var rp = prompt('replacement')
+
+        // var re = new RegExp(x, 'g'); 
+        // var z = large_txt.replace(re, rp)
+        // alert(z)
+
+
+        // RANDOM NUMBERS
+        // var bigDecimal = Math.random();
+        // var improvedNum = (bigDecimal * 50) + 40;
+        // var numberOfStars = Math.floor(improvedNum);
+        // document.write(numberOfStars)
+
+      
+        // var min = Math.ceil(400);
+        // var max = Math.floor(450);
+
+        // var x = Math.floor(Math.random() * (max - min + 1)) + min;
+        // document.write(x)
+
+
+        // CONVERTING TYPES
+        // var fn = parseInt(prompt('Enter first number'))
+        // var sn = parseInt(prompt('Enter second number'))
+        // var rs = fn + sn;
+        // alert(rs)
+
+
+        // var date = new Date();
+
+        // var milli_sec = date.getTime();
+        // document.write(milli_sec+' msec<br>')
+
+        // var seconds   = milli_sec/1000;
+        // document.write(seconds+' secs<br>')
+
+        // var minutes    =  seconds/60;
+        // document.write(minutes.toFixed(2)+' mins<br>')
+
+        // var hours      =  minutes/60;
+        // document.write(hours.toFixed(2)+' hours<br>')
+        
+        // var days       =  hours/24;
+        //  document.write(days.toFixed(2)+' days<br>')
+
+
+        // DOB: July 10, 1994
+        // var today = new Date();
+        // var today_mil = today.getTime();
+        // var today_sec = today_mil/1000;        //========================================================
+
+
+        // var dob = new Date('October 31, 2000');
+        // var dob_mil = dob.getTime();
+        // var dob_sec = dob_mil/1000;            //====================================
+       
+        //  var diff_sec = today_sec - dob_sec;
+        //  var days = diff_sec/(60*60*24);
+        //  alert(days.toFixed()+' days');
+      
+          // function dob_calculator(params) {
+                     
+          //       var today = new Date();
+          //       var today_mil = today.getTime();
+          //       var today_sec = today_mil/1000; 
+
+          //       var dob_str = prompt('Enter a valid date');
+          //       var dob = new Date(dob_str);
+
+          //       var dob_mil = dob.getTime();
+          //       var dob_sec = dob_mil/1000;
+
+          //       var diff_sec = today_sec - dob_sec;
+          //       var year = diff_sec/(60*60*24*365)
+          //       var year = year.toFixed();
+          //       alert(year+' years old')
+          //  }
+
+          // var store=0;
+   // for (let index = 1 ; index <=1000; index++) {
+     //   document.write('this is cycle '+index+'<br>')
+    //}
+
+//     var store=0;
+//     for(let index = 1; index <=1000; index++) {
+//       //  store = store + index;    
+//       store += index;
+//       }
+//       document.write(store)
+ 
+
+//    var User = 'ola';
+
+    //     var weight = '3000';      // strings ==>  'oyeleke odunsi', '238728979273', "90.9089", 'JHSGF7634F7Y762GF82762F' 
+    //     var price = 3000;       // numbers ==> floats [ 0.23, 3.142789 ] , integers [ 123, 1000000, 400, 456 ]
+    //     var check = true;    // boolean ==> true, false
+
+    //     var country;           // initialization
+    //     country = 'Nigeria';    // assignment
+
+    //     var usertrackingnumber;    // bad
+
+    //     var user_tracking_number    // nice
+    //     var userTrackingNumber     // also nice but this is called camelCasing
+        
+    //     alert(User);
+     
+        
+
+         // OPERATORS & OPERANDS
+
+         // MATHEMATICAL OPERATORS  ==> +, -, /, *, %, (), ++, --
+        //  var x = 2; 
+        //  var y = 50;
+        //  var c = y % x;
+        //  alert(c);
+
+        // var rs = 10/5+(6*(2-2))
+        // alert(rs)
+
+        // var x = 2;
+        // x++;
+        // x++;
+        // x++;
+        // alert(x)  // 5
+
+        // var y = 17;
+        // y++;
+        // y--; 
+        // alert(y)  // 17
+
+         // LOGICAL OPERATORS       ==>  <, <=, >, >=, !=, <>, ==, ===
+
+         // RELATIONAL OPERATORS    ==> &&, ||,
+
+        //   var userName = 'Yinka Adediran';
+        //   alert("Thanks, " + userName + " !");
+
+
+        // alert("2" + 2);  // 2 2,  22,  4
+
+
+        // var res = prompt('What coding language do you study ?');
+
+        // var name = prompt('what is your fullname?')
+        // var phone = prompt('what is your phone number?')
+        // var email = prompt('what is your email addresss?')
+        // var dob = prompt('what is your date of birth?')
+
+        // var profile = 'Your Full Profile \n\nYour name is: '+name+
+        // '\n Your phone is: '+phone+
+        // '\n Your email is: '+email+
+        // '\n Your Date of Birth is: '+dob
+
+        // alert(profile)
+
+
+        // CONTROL STRUCTURES
+        // var x = 21;  
+        // var y = 10;
+
+
+        // SIMPLE IF
+
+        // if (y===10) {
+        //    alert('red')
+        // } else {
+        //   alert('blue')
+        // }
+
+
+        //   var x = prompt('Enter a number')
+        //   var r = x%2;
+
+        //   if (r==0) {
+        //     alert('The number is Even')
+        //   } else {
+        //     alert('The number is odd')
+        //   }
+
+
+        // COMPLEX IF
+
+        // 1-4 : take half of a teaspoon
+        // 5-12 : take one teaspoon 
+        // 13-19 : take one and half teaspoon 
+        // 20 and above take one tablespoon
+
+        // var age = prompt('Enter your age')
+        // if (age<=0) {
+        //     alert('Error, Invalid age entered.')
+        // } else if (age>=1&&age<=4) {
+        //     alert('take half of a teaspoon')
+        // } else if (age>=5&&age<=12) {
+        //     alert('take one of a teaspoon')
+        // } else if (age>=13&&age<=19) {
+        //     alert('take one and half of a teaspoon')
+        // } else if (age>=20) {
+        //     alert('take one tablespoon')
+        // } else {
+        //     alert('Please, enter a valid age ...')
+        // }
+
+
+
+        // var score = prompt('Enter your score')
+        // if (score<0) {
+
+        // } else if (score>=0&&score<=19) {
+        //    alert('F9')
+        // } else if (score>=20&&score<=29) {
+        //     alert('E8')
+        // } else if (score>=30&&score<=34) {
+        //     alert('D7')
+        // } else if (score>=35&&score<=39) {
+        //     alert('C6')
+        // } else if (score>=40&&score<=44) {
+        //     alert('C5')
+        // } else if (score>=45&&score<=49) {
+        //     alert('C4')
+        // } else if (score>=50&&score<=64) {
+        //     alert('B3')
+        // } else if (score>=65&&score<=69) {
+        //     alert('B2')
+        // } else if (score>=70&&score<=100) {
+        //     alert('A1')
+        // } else {
+        //     alert('Invalid score!')
+        // } 
+
+
+
+
+        // NESTED IF
+
+        // gender :  female
+        // nationality :  nigerian
+        // qualification :  BSC / HND
+        // area of specialization  :  javascript
+        // year of experiance   :   greater or equals 3years
+
+
+        // var gender = prompt('what is your gender ?')
+        // if (gender=='female') {
+        //       var nationality = prompt('what is your nationality ?').toLowerCase();
+        //       if (nationality=='nigerian') {
+        //           var q = prompt('what is your qualification ?').toUpperCase();
+        //           if (q=='BSC'||q=='HND') {
+        //                 var aos = prompt('enter your languange specialized in').toLowerCase()
+        //                 if (aos=='javascript') {
+        //                      var ex = prompt('How many years of experience do you have ?')
+        //                      if (ex>=3) {
+        //                         alert ('Congrats! you will be contacted for an interview date and location shortly.')
+        //                      } else {
+        //                         alert('Sorry!, you do not qualify for the post, bcos years of experience is too low')                
+        //                      }
+        //                 } else {
+        //                     alert('Sorry!, you do not qualify for the post, bcos area of specialization not accepted')                   
+        //                 }
+        //           } else {
+        //             alert('Sorry!, you do not qualify for the post, bcos qualification not accepted')                   
+        //           } 
+        //       } else {
+        //         alert('Sorry!, you do not qualify for the post, bcos nationality not accepted')
+        //       }
+        // } else {
+        //     alert('Sorry!, you do not qualify for the post, bcos gender not accepted')
+        // }
+        
+
+        // ARRAYS
+        // var sd = [1, 45.098, 'blue', 'Nigeria', true, [12,'bdhd',false], {a:'23',b:'63673'}];
+
+        // var colors = ['red', 'blue', 'yellow', 'green', 'purple', 'cyan']
+        // colors.pop();
+        // colors.push('brown', 'white', 'black', 'grey');
+
+
+
+        // var age = [20, 22, 28, 29, 27, 26, 24, 25]
+        // var countries = ['egypt', 'ethiopia', 'chad', 'seychelles', 'mauritius', 'sierra leone', 'ghana']
+        // var x = [true, false]
+
+
+        // var msg = colors[1]
+        // alert(msg)
+
+
+        // var color1 = prompt('Enter a color name')
+        // var color2 = prompt('Enter a color name')
+        // var color3 = prompt('Enter a color name')
+        // var color4 = prompt('Enter a color name')
+        // var color5 = prompt('Enter a color name')
+
+        // var colors = [color1, color2, color3, color4, color5]
+        // console.log(colors)
+
+
+
+        // LOOP STRUCTURES
+
+        // initialzation
+        // condition
+        // increment
+
+
+        // for (let index = 1; index <=100; index++) {
+        //     document.write('this is cycle '+index+'<br>')
+        // }
+
+        // var store=0;
+        // for (let index = 1; index <=1000; index++) {
+
+        //     //  store = store + index;
+        //      store += index;
+
+        // }
+        // document.write(store)
+
+
+        // write a simple program to print 2 multiplication table.
+        // from 1 to 12
+
+
+        // document.write('<div class="row m-3 bg-warning">')
+        // for (let table = 1; table <=12; table++) {
+      
+        //     document.write('<div class="col-1 p-2">')
+        //         document.write('<div class="bg-dark rounded text-warning p-2">')
+        //         for (let index = 1; index <=12; index++) {
+        //                 var rs = table * index;
+        //                 var m = table+' x '+index+' = '+rs+'<br>';
+        //                 document.write('<p class="mb-0 line">'+m+'</p>')
+        //         }
+        //         document.write('</div>')
+        //     document.write('</div>')
+            
+        // }
+        // document.write('</div>')
+
+
+
+        // LENGTY OF TEXT
+        // var x = prompt('Enter some text')
+        // var length = x.length
+        // alert('The text contains '+length+' no of characters')
+
+
+        // FINDING SEGMENTS
+        // var x = prompt('Enter some text')
+        // var search = prompt('Emter a search text')
+        
+        // // var z = x.indexOf(search)
+        // var z = x.lastIndexOf(search)
+        // if (z<0) {
+        //     alert('The serched text does not exist!')
+        // } else {
+        //     alert('The serched text exist at index '+z)
+        // }
+
+
+
+        // CHAR AT
+        // var x = prompt('Enter some text')
+        // var index = prompt('Enter an index')
+        
+        // var z = x.charAt(index) 
+        // alert(z)
+         
+
+
+        // REPLACE
+        // var large_txt = prompt('Enter large text')
+        // var x = prompt('what to replace ?')
+        // var rp = prompt('replacement')
+        
+        // var z = large_txt.replace(x, rp)
+        // alert(z)
+
+
+
+        // GLOBAL REPLACEMENT
+     //    var large_txt = prompt('Enter large text')
+     //    var x = prompt('what to replace ?')
+     //    var rp = prompt('replacement')
+
+     //    var re = new RegExp(x, 'g'); 
+     //    var z = large_txt.replace(re, rp)
+     //    alert(z)
+
+// CONTROL STRUCTURES
+        // var x = 21;
+        // var y = 10;
+        
+        // if  (y>10) {
+        //     alert('green')
+        // } else {
+        //     alert('yellow')
+        // }
+        
+        // RANDOM NUMBERS
+
+
+
+     //       function dob_calculator(params) {
+     //     var a = parseFloat(prompt('Enter 1st number'))
+     //     var b = parseFloat(prompt('Enter 2nd number'))
+     //     var c = prompt('Enter Operator').toLowerCase()
+     //     var d;
+
+     //     var result = calc_result(a,b,d,c)
+     //     alert(result)
+ 
+
+     //      function calc_result (fn,sn,rs,op) {
+     //           if      (op=='+') { rs = fn + sn  }
+     //           else if (op=='-') { rs = fn - sn  }
+     //           else if (op=='*') { rs = fn * sn  }
+     //           else if (op=='/') { rs = fn / sn  }
+     //           else                { rs = 'Invalid Operator' }
+     //           return rs
+     //      }
+     // }
+
+
+   
+     </script>
+
+
+
+</body>
+</html> 

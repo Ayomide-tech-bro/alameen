@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="row mt-5">
+
+    <div class="col-6 mx-auto">
+
+        <img src="../Al-ameen/examplearts/images/logo.PNG" alt="" class="rounded w-50" id="img1">
+
+        <button class="btn btn-dark w-50 mt-4 text-light" onclick="switchpic()">Switch Pictures...</button>
+
+    </div>
+
+</div>
+
+
+
+    <script>
+
+      var mypics = ["pics/Drip_Too_Hard.jpg" , "pics/Wizkid.jpg" , "pics/IMG-20221012-WA0007.jpg" ,
+       "pics/IMG-20221031-WA0023.jpg" , "pics/Ruger-The-Second-Wave-696x696-1-1-4.jpg"]  
+
+      function switchpic () {
+
+        var randomNum = Math.floor(Math.random() * mypics.length);
+
+        document.getElementById('img1').src = mypics[randomNum];
+
+      }
+    </script>
+
+<script>
+
+
+</script>
+
+
+</body>
+</html>

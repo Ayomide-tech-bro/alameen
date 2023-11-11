@@ -1,0 +1,148 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+</head>
+<body>
+
+    <script> 
+
+// var store=0;
+//     for(let index = 1; index <=1000; index++) {
+//       //  store = store + index;    
+//       store += index;
+//       }
+//       document.write(store)
+
+
+   
+// for(let m = 1; m <=12; m++) {
+//     var table = 1;
+//     var rs = table * m;
+//     document.write(table+ ' x '+m+' = '+rs+'<br>')
+// }
+
+      
+// for(let index = 1; index <=12; index++) {
+//     var table = 2;
+//     var rs = table * index;
+//     document.write(table+ ' x '+index+' = '+rs+'<br>')
+// }
+
+    
+// for(let p = 1; p <=12; p++) {
+//     var table = 3;
+//     var rs = table * p;
+//     document.write(table+ ' x '+p+' = '+rs+'<br>')
+// }
+
+
+// for(let k = 1; k <=12; k++) {
+//     var table = 4;
+//     var rs = table * k;
+//     document.write(table+ ' x '+k+' = '+rs+'<br>')
+// }
+
+   
+// for(let h = 1; h <=12; h++) {
+//     var table = 5;
+//     var rs = table * h;
+//     document.write(table+ ' x '+h+' = '+rs+'<br>')
+// }
+
+   
+// for(let g = 1; g <=12; g++) {
+//     var table = 6;
+//     var rs = table * g;
+//     document.write(table+ ' x '+g+' = '+rs+'<br>')
+// }
+
+   
+// for(let f = 1; f <=12; f++) {
+//     var table = 7;
+//     var rs = table * f;
+//     document.write(table+ ' x '+f+' = '+rs+'<br>')
+// }
+
+   
+// for(let e = 1; e <=12; e++) {
+//     var table = 8;
+//     var rs = table * e;
+//     document.write(table+ ' x '+e+' = '+rs+'<br>')
+// }
+
+   
+// for(let d = 1; d <=12; d++) {
+//     var table = 9;
+//     var rs = table * d;
+//     document.write(table+ ' x '+d+' = '+rs+'<br>')
+// }
+
+   
+// for(let c = 1; c <=12; c++) {
+//     var table = 10;
+//     var rs = table * c;
+//     document.write(table+ ' x '+c+' = '+rs+'<br>')
+// }
+
+   
+// for(let b = 1; b <=12; b++) {
+//     var table = 11;
+//     var rs = table * b;
+//     document.write(table+ ' x '+b+' = '+rs+'<br>')
+// }
+
+   
+// for(let a = 1; a <=12; a++) {
+//     var table = 12;
+//     var rs = table * a;
+//     document.write(table+ ' x '+a+' = '+rs+'<br>')
+// }
+
+
+        // GLOBAL REPLACEMENT
+        // var large_txt = prompt('Enter large text')
+        // var x = prompt('what to replace ?')
+        // var rp = prompt('replacement')
+
+        // var re = new RegExp(x, 'g'); 
+        // var z = large_txt.replace(re, rp)
+        // alert(z)
+        
+        
+        
+        document.write('<div class="row m-3 bg-warning">')
+        for (let table = 1; table <=12; table++) {
+      
+            document.write('<div class="col-1 p-2">')
+                document.write('<div class="bg-dark rounded text-warning p-2">')
+                for (let index = 1; index <=12; index++) {
+                        var rs = table * index;
+                        var m = table+' x '+index+' = '+rs+'<br>';
+                        document.write('<p class="mb-0 line">'+m+'</p>')
+                }
+                document.write('</div>')
+            document.write('</div>')
+            
+        }
+        document.write('</div>')
+      
+
+
+</script>
+
+
+<style>
+    
+.line {
+    font-size: 13px;
+}
+
+</style>
+
+
+</body>
+</html>
